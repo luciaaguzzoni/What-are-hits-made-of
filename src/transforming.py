@@ -1,14 +1,38 @@
-import seaborn as sns
-import matplotlib.pyplot as plt
+import pandas as pd
 
-import warnings
-warnings.filterwarnings('ignore')
+def decade(year):
+    if year<1969:
+        return '60s'
+    elif year<1979:
+        return '70s'
+    elif year<1989:
+        return '80s'
+    elif year<1999:
+        return '90s'
+    elif year<2009:
+        return '2000s'
+    elif year<=2020:
+        return '2010s'
+    
 
-sns.set_context("poster")
-sns.set(rc={"figure.figsize": (12.,6.)})
-sns.set_style("whitegrid")
-matplotlib inline
-config Inlinebackend.figure_format= 'retina'
+def create_year_decade_columns(df):
+    #create column with release year of the track album
+    pattern_year="(^\d{4})"
+    df["track_album_release_year"]= df["track_album_release_date"].str.extract(pattern_year)
+    #create column with release decade of the track album
+    df["track_album_release_decade"] = pd.to_numeric(df["track_album_release_year"]).apply(decade)
+    return df
+
+
+
+
+
+
+
+
+
+
+
 
 
 
