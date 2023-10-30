@@ -49,13 +49,13 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 **60s**
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg)
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg | width=60)
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg)
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg | width=60)
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg)
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg | width=60)
 
 **70s**
 
