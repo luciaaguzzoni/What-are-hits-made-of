@@ -39,11 +39,9 @@ Duplicated tracks and tracks from playlists of specific artists were deleted.
 
 The analysis of correlation between track popularity and track features was carried out depending on the release date of the tracks.
 
-In order to do so, new dataframes were created containing tracks of different decades (60s, 70s, 80s, 90s, 2000s and 2010s), through the creation of the two new columns *'track_album_release_year'* and *'track_album_release_decade'*.
+In order to do so, new dataframes were created containing tracks of different decades (60s, 70s, 80s, 90s, 2000s and 2010s), thanks to the previous introduction of two new columns in the Dataframe *'track_album_release_year'* and *'track_album_release_decade'*.
 
-In order to do so, two new columns were added to the dataframe: *'track_album_release_year'* and *'track_album_release_decade'*.
-
-
+The results are shown below, respectively for values of Danceability, Energy and Valence compared to values of track Popularity.
 
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" />  <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg" width="370" />
 
@@ -74,7 +72,7 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 
 
-Subsequently, only the most popular songs from each decade were taken into consideration, to check how track features changed throughout decades in the most popular songs.
+Subsequently, only the most popular songs from each decade were taken into consideration, to check how track features has changed throughout decades for the most popular songs.
 
 
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/danceability.jpg" width="450" />
@@ -88,5 +86,6 @@ Subsequently, only the most popular songs from each decade were taken into consi
 ## Conclusion
 
 
+
 ## Links
-project presentation: https://www.canva.com/design/DAFyp7097VM/IheuZ0CFngyBh7lsxXYGlg/edit?utm_content=DAFyp7097VM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Project Presentation: https://www.canva.com/design/DAFyp7097VM/IheuZ0CFngyBh7lsxXYGlg/edit?utm_content=DAFyp7097VM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

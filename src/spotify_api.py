@@ -64,7 +64,7 @@ def playlists(dict_):
     for k,v in dict_:
         playlist_data = spotify_request_playlist(v,token) #get playlist 
         tracks = playlist_data['tracks']['items'] #get playlist tracks
-        time.sleep(2)
+        time.sleep(4)
         for track in tracks:
             track_dict = {}
             track_dict["track_id"] = track['track']['id']
@@ -90,7 +90,7 @@ def features(list_of_dict):
         el["danceability"] = track_data['danceability']
         el["energy"] = track_data["energy"]
         el["valence"] = track_data["valence"]
-        time.sleep(4)
+        time.sleep(6)
     return list_of_dict
 
 

@@ -8,6 +8,7 @@ import pandas as pd
 
 spotify_songs_kaggle="data/spotify_songs.csv" #path of kaggle dataset
 spotify_songs_api_path = "data/more_spotify_songs.csv" #path of dataset obtained through API
+
 api_df_already_created = True #dataset obtained through API has already been created
 new_dataframe = False #any modifications in kaggle dataframe or API dataframe?
 
@@ -29,8 +30,8 @@ else:
           "60s Party": "37i9dQZF1DX3AdAEX3vkB1",
           "Alternative 60s" : "37i9dQZF1DX5qNE4zrflL7",
           "I Love My 60s Funk" : "37i9dQZF1DX6vmXrF8Shld",
-           "60s Country" : "37i9dQZF1DX7CGYgLhqwu5",
-           "Tropicália" : "37i9dQZF1DXbEVW4FA74zM",
+          "60s Country" : "37i9dQZF1DX7CGYgLhqwu5",
+          "Tropicália" : "37i9dQZF1DXbEVW4FA74zM",
           "60s Rock Drive " : "37i9dQZF1DWSSWiBVaJn3j",
           "60s Music Hits | Best 60's Songs Rock, Soul, R&B, Blues, Pop Oldies Playlist" : "32f7ctSV6ZLppG27q4WIya",
           "Summer Hits of the 60s" : "37i9dQZF1DX9BDEbdcUkP2",
