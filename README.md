@@ -1,28 +1,29 @@
-# project-II
+# Charachteristics of a Hit
+## 
 
-## Introduction 
-
-
-## Dataset
+### Introduction 
 
 
-## Workflow/Methodology 
+### Dataset
+
+
+### Workflow/Methodology 
 Methodology, steps followed to achieve the project, libraries used, etc.
 
 
-## Goals/Hypothesis
+### Goals/Hypothesis
 Project goals / Initial hypothesis
 
 
-## Analysis
+### Analysis
 Insights, patterns, relations found in the data, etc.
 
 
-## Results 
+### Results 
 Results of the analysis (visualizations, validation of hypothesis, etc.)
 
-## Conclusion
+### Conclusion
 
 
-## Links
+### Links
 link presentazione canva

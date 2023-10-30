@@ -11,7 +11,12 @@ sns.set_style("whitegrid")
 
 
 
+
 def decade(year):
+    '''
+    input: year(int)
+    output: which decade that year belongs to(str)
+    '''
     if year<1969:
         return '60s'
     elif year<1979:
@@ -27,14 +32,16 @@ def decade(year):
     
 
 def create_year_decade_columns(df):
+    '''
+    input: song dataframe
+    output: input song dataframe with two more columns: track_album_release_year, track_album_release_decade
+    '''
     #create column with release year of the track album
     pattern_year="(^\d{4})"
     df["track_album_release_year"]= df["track_album_release_date"].str.extract(pattern_year)
     #create column with release decade of the track album
     df["track_album_release_decade"] = pd.to_numeric(df["track_album_release_year"]).apply(decade)
     return df
-
-
 
 
 
@@ -62,12 +69,12 @@ def popularity(df,year):
 
 def most_popular(df,n_min):
     '''
-    input: dataframe of songs from same decade, int n
+    input: df (dataframe of songs from same decade), n_min (int)
     output: dataframe with at least n_min songs from that decade with highest 'track_popularity'
     '''
     best_df= df.sort_values("track_popularity", ascending=False) #sorting by popularity
     best_df = best_df.reset_index(drop=True) #rearranging the index
-    p = best_df.iloc[n_min-1]["track_popularity"]
+    p = best_df.iloc[n_min-1]["track_popularity"] #get popularity of the n_min element of the rearranged dataframe
     best_df = df[df["track_popularity"]>=p] #keeping only the songs with track_popularity >= p
     return best_df
 

@@ -10,7 +10,10 @@ sns.set_style("whitegrid")
 
 
 def visualize_decade_jointplot(df, decade):
-    #jointplot for each feature
+    '''
+    input: df (dataframe containing tracks from same decade), decade(str) 
+    creates a jointplot of popularity with each feature(danceability, energy, valence)
+    '''
 
     # danceability and popularity 
     jointplot = sns.jointplot(data=df, x= "track_popularity", y= "danceability", color='red')  
@@ -38,7 +41,10 @@ def visualize_decade_jointplot(df, decade):
 
 
 def visualize_decade_lineplot(df, decade):
-    #lineplot for each decade
+    '''
+    input: df (dataframe containing tracks from same decade), decade(str) 
+    creates a lineplot of popularity with each feature(danceability, energy, valence)
+    '''
 
     # danceability and popularity 
     lineplot = sns.lineplot(data=df, x= "track_popularity", y= "danceability", color ='red', estimator= 'mean')
@@ -68,8 +74,12 @@ def visualize_decade_lineplot(df, decade):
 
 
 def visualize_all_decades(df):
+    '''
+    input: song dataframes
+    creates a barplot for each feature (danceability, energy, valence) of tracks popularity throughout the decades
+    '''
 
-    # danceability throughout decades
+    # danceability popularity throughout decades
     barplot = sns.barplot(x="track_album_release_decade", y="danceability", data=df, order = ['60s','70s','80s','90s','2000s','2010s'], color = 'red')
     plt.xlabel("Popularity")
     plt.ylabel("Danceability")
@@ -78,7 +88,7 @@ def visualize_all_decades(df):
     plt.clf()
 
 
-    # energy throughout decades
+    # energy popularity throughout decades
     barplot = sns.barplot(x="track_album_release_decade", y="energy", data=df, order = ['60s','70s','80s','90s','2000s','2010s'], color='blue')
     plt.xlabel("Popularity")
     plt.ylabel("Energy")
@@ -86,7 +96,7 @@ def visualize_all_decades(df):
     barplot.figure.savefig(f"images/all_decades/energy.jpg", dpi=1000)
     plt.clf()
 
-    # valence throughout decades
+    # valence popularity throughout decades
     barplot = sns.barplot(x="track_album_release_decade", y="valence", data=df, order = ['60s','70s','80s','90s','2000s','2010s'], color='green')
     plt.xlabel("Popularity")
     plt.ylabel("Valence")
