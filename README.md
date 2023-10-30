@@ -49,68 +49,68 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 **60s**
 
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="300" />
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" />
 
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg" width="300" />
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg" width="370" />
 
 
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg" width="300" />
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg" width="370" />
 
 **70s**
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_lineplot.jpg" width="370" />
 
 
 **80s**
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_lineplot.jpg" width="370" />
 
 **90s**
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_lineplot.jpg" width="370" />
 
 **2000s**
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_lineplot.jpg" width="370" />
 
 **2010s**
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_lineplot.jpg" width="370" />
 
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_lineplot.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_lineplot.jpg" width="370" />
 
 
 
@@ -119,11 +119,11 @@ Subsequently, only the most popular songs from each decade were taken into consi
 
 **All decades**
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/danceability.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/danceability.jpg" width="450" />
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/energy.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/energy.jpg" width="450" />
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/valence.jpg)
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/valence.jpg" width="450" />
 
 
 
