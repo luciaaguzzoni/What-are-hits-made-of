@@ -45,8 +45,7 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 
 
-:----------------------------:|:----------------------------:
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" /> | <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg" width="370" />
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" />  <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg" width="370" />
 
 
 
