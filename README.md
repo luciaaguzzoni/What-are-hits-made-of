@@ -49,8 +49,7 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 **60s**
 
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg | {width=40px})
-
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="100" />
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg | {width=40px})
 
