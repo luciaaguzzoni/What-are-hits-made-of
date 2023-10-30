@@ -89,7 +89,7 @@ def visualize_all_decades(df):
     barplot = sns.barplot(x="track_album_release_decade", y="danceability", data=df, order = ['60s','70s','80s','90s','2000s','2010s'], color = 'red')
     plt.xlabel("Popularity")
     plt.ylabel("Danceability")
-    plt.title("Danceability in most popualr tracks throughout the decades")
+    plt.title("Danceability in most popualar tracks throughout the decades")
     barplot.figure.savefig(f"images/all_decades/danceability.jpg", dpi=1000)
     plt.clf()
 
@@ -98,7 +98,7 @@ def visualize_all_decades(df):
     barplot = sns.barplot(x="track_album_release_decade", y="energy", data=df, order = ['60s','70s','80s','90s','2000s','2010s'], color='blue')
     plt.xlabel("Popularity")
     plt.ylabel("Energy")
-    plt.title("Energy in most popualr tracks throughout the decades")
+    plt.title("Energy in most popular tracks throughout the decades")
     barplot.figure.savefig(f"images/all_decades/energy.jpg", dpi=1000)
     plt.clf()
 
@@ -106,7 +106,7 @@ def visualize_all_decades(df):
     barplot = sns.barplot(x="track_album_release_decade", y="valence", data=df, order = ['60s','70s','80s','90s','2000s','2010s'], color='green')
     plt.xlabel("Popularity")
     plt.ylabel("Valence")
-    plt.title("Valence in most popualr tracks throughout the decades")
+    plt.title("Valence in most popular tracks throughout the decades")
     barplot.figure.savefig(f"images/all_decades/valence.jpg", dpi=1000)
     plt.clf()
 
