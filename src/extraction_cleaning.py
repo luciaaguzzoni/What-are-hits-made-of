@@ -1,4 +1,4 @@
-import spotify_api as spotify
+import pandas as pd
 
 #extraction
 def import_dataframe(path):

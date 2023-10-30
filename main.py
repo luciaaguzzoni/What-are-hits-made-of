@@ -3,17 +3,21 @@ from src import transforming as tr
 from src import visualizing as viz
 from src import spotify_api as sp
 
+import pandas as pd
+
 
 spotify_songs_kaggle="data/spotify_songs.csv"
+spotify_songs_api_path = "data/more_spotify_songs.csv"
+api_df_already_created = True
+new_dataframe = False
 
 # importing from csv
-spotify_songs = cl.import_dataframe("spotify_songs_kaggle")
+spotify_songs = cl.import_dataframe(spotify_songs_kaggle)
 
 #importing from API
-already_created = True
-spotify_songs_api_path = "data/more_spotify_songs.csv"
-if already_created:
-     more_spotify_songs = cl.import_dataframe("spotify_songs_api")
+
+if api_df_already_created:
+     more_spotify_songs = cl.import_dataframe(spotify_songs_api_path)
 else:
      dict_playlists = {
           #60
@@ -35,55 +39,56 @@ else:
           "60s 70s 80s Mellow & Chill" : "7saihTo4D0CbY3oRuEvbr1",
           "60s & 70s Rock" : "4xfz6zwuiOKePIkCd77vmd",
           "60 70 80 Hits" : "39B23QVYhuUK7xJuJUVVbN",
-          "English Oldies 60s 70s 80s" : "266GhFlFvS5VxZ2V3rjEKW",
-          "Greatest hits 60s 70s 80s" : "0dTWJPmCobQUb3rji1VpKi",
-          "Witchy 60s & 70s" : "1VVWowwhS6HXwT8ItmL730",
-          "Gold Classic 60s 70s 80s 90s" : "4RmVjbovY05t3IEMYyHtDC",
-          "All Out 90s" : "37i9dQZF1DXbTxeAdrVG2l",
-          "90s Party" : "37i9dQZF1DXdo6A3mWpdWx",
-          "I Love My '90s Hip-Hop'" : "37i9dQZF1DX186v583rmzp",
-          "90s Road Trip" : "37i9dQZF1DX76cnmxfAAhD",
-          "All Out 70s" : "37i9dQZF1DWTJ7xPn4vNaz",
-          "70s Party" : "37i9dQZF1DX1Hya1sRqqxI",
-          "70s Soul Classics" : "37i9dQZF1DWULEW2RfoSCi",
-          "Soft 70s" : "37i9dQZF1DWTTn6daQVbOa"
+          #"English Oldies 60s 70s 80s" : "266GhFlFvS5VxZ2V3rjEKW",
+          #"Greatest hits 60s 70s 80s" : "0dTWJPmCobQUb3rji1VpKi",
+          #"Witchy 60s & 70s" : "1VVWowwhS6HXwT8ItmL730",
+          #"Gold Classic 60s 70s 80s 90s" : "4RmVjbovY05t3IEMYyHtDC",
+          #"All Out 90s" : "37i9dQZF1DXbTxeAdrVG2l",
+          #"90s Party" : "37i9dQZF1DXdo6A3mWpdWx",
+          #"I Love My '90s Hip-Hop'" : "37i9dQZF1DX186v583rmzp",
+          #"90s Road Trip" : "37i9dQZF1DX76cnmxfAAhD",
+          #"All Out 70s" : "37i9dQZF1DWTJ7xPn4vNaz",
+          #"70s Party" : "37i9dQZF1DX1Hya1sRqqxI",
+          #"70s Soul Classics" : "37i9dQZF1DWULEW2RfoSCi",
+          #"Soft 70s" : "37i9dQZF1DWTTn6daQVbOa"
      }
      more_spotify_songs = sp.dataframe_from_api(dict_playlists, spotify_songs_api_path)
+
+
 
 
 #concatenate dataframes
 spotify_songs =  pd.concat([spotify_songs,more_spotify_songs], ignore_index=True)
 
+
+
 #cleaning dataframe
 spotify_songs = cl.clean_dataframe(spotify_songs)
 
-#altering dataframe
+
+
+
+#transforming dataframe
 spotify_songs = tr.create_year_decade_columns(spotify_songs)
 
 
-#crating dataframes for each decade
+#creating dataframes for each decade + 
 spotify60 = spotify_songs[pd.to_numeric(spotify_songs["track_album_release_year"])<1970]
 spotify70 = spotify_songs[(pd.to_numeric(spotify_songs["track_album_release_year"])>=1970) & (pd.to_numeric(spotify_songs["track_album_release_year"])<1980)]
 spotify80 = spotify_songs[(pd.to_numeric(spotify_songs["track_album_release_year"])>=1980) & (pd.to_numeric(spotify_songs["track_album_release_year"])<1990)]
 spotify90 = spotify_songs[(pd.to_numeric(spotify_songs["track_album_release_year"])>=1990) & (pd.to_numeric(spotify_songs["track_album_release_year"])<2000)]
 spotify00 = spotify_songs[(pd.to_numeric(spotify_songs["track_album_release_year"])>=2000) & (pd.to_numeric(spotify_songs["track_album_release_year"])<2010)]
 spotify10 = spotify_songs[(pd.to_numeric(spotify_songs["track_album_release_year"])>=2010) & (pd.to_numeric(spotify_songs["track_album_release_year"])<=2020)]
-# saving the new daframes
-spotify60.to_csv("../data/spotify60.csv", index=False)
-spotify70.to_csv("../data/spotify70.csv", index=False)
-spotify80.to_csv("../data/spotify80.csv", index=False)
-spotify90.to_csv("../data/spotify90.csv", index=False)
-spotify00.to_csv("../data/spotify00.csv", index=False)
-spotify10.to_csv("../data/spotify10.csv", index=False)
+
+spotify60.to_csv("data/spotify60.csv", index=False)
+spotify70.to_csv("data/spotify70.csv", index=False)
+spotify80.to_csv("data/spotify80.csv", index=False)
+spotify90.to_csv("data/spotify90.csv", index=False)
+spotify00.to_csv("data/spotify00.csv", index=False)
+spotify10.to_csv("data/spotify10.csv", index=False)
+
 
 #creating a dataframe with only most popular songs from each decade
-spotify_popular = pd.concat([spotify60,spotify70,spotify80,spotify90,spotify00,spotify10], ignore_index=True)
-spotify_popular.to_csv("../data/spotify_popular.csv", index=False)
-
-
-#VISUALIZING
-
-# each decades
 decades =  {
      '60s':spotify60,
      '70s':spotify70,
@@ -92,7 +97,47 @@ decades =  {
      '2000s':spotify00,
      '2010s':spotify10}
 
-for dec,df in decades:
+for dec,df in decades.items():
+     tr.popularity(df,dec)
+
+
+if new_dataframe:
+     min_60s = int(input(f"Number of tracks for 60s: {len(spotify60)}. \n Insert minimum tracks for 60s: "))
+     min_70s = int(input(f"Number of tracks for 70s: {len(spotify70)}. \n Insert minimum tracks for 70s: "))
+     min_80s = int(input(f"Number of tracks for 80s: {len(spotify80)}. \n Insert minimum tracks for 80s: "))
+     min_90s = int(input(f"Number of tracks for 90s: {len(spotify90)}. \n Insert minimum tracks for 90s: "))
+     min_00s = int(input(f"Number of tracks for 2000s: {len(spotify00)}. \n Insert minimum tracks for 2000s: "))
+     min_10s = int(input(f"Number of tracks for 2010s: {len(spotify10)}. \n Insert minimum tracks for 2010s: "))
+
+else:
+     min_60s = 100 #of 458
+     min_70s = 150 #of 760
+     min_80s = 200 #of 992
+     min_90s = 400 #of 1897
+     min_00s = 700 #of 3465
+     min_10s = 3000 #of 19487
+
+spotify60_popular = tr.most_popular(spotify60,min_60s)
+spotify70_popular = tr.most_popular(spotify70,min_70s)
+spotify80_popular = tr.most_popular(spotify80,min_80s)
+spotify90_popular = tr.most_popular(spotify90,min_90s)
+spotify00_popular = tr.most_popular(spotify00,min_00s)
+spotify10_popular = tr.most_popular(spotify10,min_10s)
+
+
+
+spotify_popular = pd.concat([spotify60_popular,spotify70_popular,spotify80_popular,spotify90_popular,spotify00_popular,spotify10_popular], ignore_index=True)
+spotify_popular.to_csv("data/spotify_popular.csv", index=False)
+
+
+
+
+
+
+#VISUALIZING
+
+# each decades
+for dec,df in decades.items():
      viz.visualize_decade_jointplot(df, dec)
      viz.visualize_decade_lineplot(df, dec)
 
