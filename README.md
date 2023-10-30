@@ -1,4 +1,4 @@
-# How to make a Hit
+# How a Hit is made
 
 
 ## Introduction 
@@ -30,13 +30,150 @@ This code was written in Python/Jupyter Notebook, using the following libraries:
 - dotenv
 - time
 
-******** tracks aggiunte tramite API***********
+Since the majority of the tracks in the Kaggle database were released after 1990, I used Spotify API to get more songs from the previous years and joined them to the initial dataframe.
 
-New dataframes were created containing tracks of different decades (60s, 70s, 80s, 90s, 2000s and 2010s) and a dataframe with most popular songs from every decade (********* criterio ********)
-Correlation between popularity and track features was investigated for each decade and popularity of features was compared between decades.
+Duplicated tracks and tracks from playlists of specific artists were deleted.
 
 
 ## Analysis&Results
+
+The analysis of correlation between track popularity and track features was carried out depending on the release date of the tracks.
+
+In order to do so, new dataframes were created containing tracks of different decades (60s, 70s, 80s, 90s, 2000s and 2010s), through the creation of the two new columns *'track_album_release_year'* and *'track_album_release_decade'*.
+
+In order to do so, two new columns were added to the dataframe: *'track_album_release_year'* and *'track_album_release_decade'*.
+
+
+
+
+
+**60s**
+
+- danceability
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg)
+
+- energy
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg)
+
+-valence
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg)
+
+**70s**
+
+- danceability
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg)
+
+- energy
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_lineplot.jpg)
+
+-valence
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_lineplot.jpg)
+
+
+**80s**
+
+- danceability
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_lineplot.jpg)
+
+- energy
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_lineplot.jpg)
+
+-valence
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_lineplot.jpg)
+
+**90s**
+
+- danceability
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_lineplot.jpg)
+
+- energy
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_lineplot.jpg)
+
+-valence
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_lineplot.jpg)
+
+**2000s**
+
+- danceability
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_lineplot.jpg)
+
+- energy
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_lineplot.jpg)
+
+-valence
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_lineplot.jpg)
+
+**2010s**
+
+- danceability
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_lineplot.jpg)
+
+- energy
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_lineplot.jpg)
+
+-valence
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_jointplot.jpg)
+
+![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_lineplot.jpg)
+
+
+
+
+Subsequently, only the most popular songs from each decade were taken into consideration, to check how track features changed throughout decades in the most popular songs.
+
+**All decades**
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/danceability.jpg)
 
