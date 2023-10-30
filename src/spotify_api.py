@@ -2,14 +2,12 @@ import pandas as pd
 from pandas import json_normalize
 
 import requests 
-import json
-import os
 from dotenv import load_dotenv #conda install -c conda-forge python-dotenv
 
 import time
 
-import sys
-sys.path.append("../")
+#import sys
+#sys.path.append("../")
 
 from getpass import getpass
 
