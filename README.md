@@ -45,81 +45,46 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 
 
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" />  <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg" width="370" />
-
-
-
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" />
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg" width="370" />
-
-**70s**
-
-
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg" width="370" />  
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg" width="370" />
 
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_lineplot.jpg" width="370" />
-
-
-**80s**
-
-
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_lineplot.jpg" width="370" />
-
-**90s**
-
-
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_lineplot.jpg" width="370" />
 
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_lineplot.jpg" width="370" />
-
-**2000s**
-
-
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_lineplot.jpg" width="370" />
-
-
-<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_lineplot.jpg" width="370" />
-
-**2010s**
-
-
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_lineplot.jpg" width="370" />
 
 
+
+
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg" width="370" /> 
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_lineplot.jpg" width="370" />
+
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_lineplot.jpg" width="370" />
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_lineplot.jpg" width="370" />
+
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_lineplot.jpg" width="370" />
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_lineplot.jpg" width="370" />
 
 
+
+
+
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg" width="370" /> 
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_lineplot.jpg" width="370" />
+
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_lineplot.jpg" width="370" />
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_lineplot.jpg" width="370" />
+
+<img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_lineplot.jpg" width="370" />
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_lineplot.jpg" width="370" />
+
 
 
 
 
 Subsequently, only the most popular songs from each decade were taken into consideration, to check how track features changed throughout decades in the most popular songs.
 
-**All decades**
 
 <img src="https://github.com/luciaaguzzoni/project-II/blob/main/images/all_decades/danceability.jpg" width="450" />
 
