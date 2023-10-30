@@ -1,4 +1,4 @@
-# How a Hit is made
+# What are Hits made of?
 
 
 ## Introduction 
@@ -49,122 +49,67 @@ In order to do so, two new columns were added to the dataframe: *'track_album_re
 
 **60s**
 
-- danceability
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_jointplot.jpg)
-
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/danceability_lineplot.jpg)
 
-- energy
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/energy_lineplot.jpg)
 
--valence
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/60s/valence_lineplot.jpg)
 
 **70s**
 
-- danceability
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/danceability_lineplot.jpg)
 
-- energy
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/energy_lineplot.jpg)
 
--valence
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/70s/valence_lineplot.jpg)
 
 
 **80s**
 
-- danceability
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/danceability_lineplot.jpg)
 
-- energy
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/energy_lineplot.jpg)
 
--valence
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/80s/valence_lineplot.jpg)
 
 **90s**
 
-- danceability
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/danceability_lineplot.jpg)
 
-- energy
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/energy_lineplot.jpg)
 
--valence
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/90s/valence_lineplot.jpg)
 
 **2000s**
 
-- danceability
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/danceability_lineplot.jpg)
 
-- energy
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/energy_lineplot.jpg)
 
--valence
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2000s/valence_lineplot.jpg)
 
 **2010s**
 
-- danceability
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/danceability_lineplot.jpg)
 
-- energy
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/energy_lineplot.jpg)
 
--valence
-
-![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_jointplot.jpg)
 
 ![img](https://github.com/luciaaguzzoni/project-II/blob/main/images/2010s/valence_lineplot.jpg)
 
